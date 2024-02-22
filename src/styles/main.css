@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a3a18a2;
+    margin: 0;
+    padding: 0;
+    border-top: 70px solid black;
+}
+
+.menu-container {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 9999;
+    /* Ensure menu is above button */
+}
+
+.menu-container.active {
+    display: block;
+}
+
+.border-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+    padding: 10px;
+    z-index: 999;
+    /* Ensure button is above menu */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.border-container button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+    /* Move the button to the right */
+    z-index: 10000;
+    /* Ensure button is above menu */
+}
+
+#a.player-stats{
+    font-size: large;
+}
+
+.gamertag-box {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gamertag-box label,
+.gamertag-box input,
+.gamertag-box button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+@font-face {
+    font-family: 'HaloFont';
+    src: url("../fonts/halo_font.ttf") format('truetype');
+}
+
+/* Styles for index.html elements specific*/
+
+#main-title {
+    text-align: center;
+    font-family: "HaloFont" !important;
+    font-size: 56px;
+    line-height: 1.4;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(160, 86, 3, 0.842);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.welcome-container {
+    margin: 0 25%;
+}
+
+#welcome-message {
+    text-align: center;
+}
+
+.weapon-types {
+    color: #000000;
+    margin-left: 10%;
+}
+
+#news-title {
+    color: rgba(241, 235, 235, 0.909);
+    margin-top: -10%;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+}
+
+a {
+    color: rgb(64, 76, 200);
+}
+
+img {
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 5%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Maps {
+    width: 18%;
+    float: left;
+    margin-right: 10%; /* Adjusted to create space between Maps and News */
+}
+
+.Weapons {
+    width: 18%;
+    float: right;
+    margin-right: 2.5%; /* Adjusted to create space between Weapons and News */
+}
+
+.news-container {
+    width: 45%;
+    margin: 0 auto;
+    color: #ffffffcc;
+    background-color: rgba(27, 26, 26, 0.884);
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden; /* Ensures the floats don't overflow the container */
+    display: inline-block; /* Ensures the container behaves like an inline element */
+}
+
+#map-title,
+#weapon-title {
+    margin-left: 10%;
+}
+
+
+
+
+#statsContainer {
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(7, minmax(100px, 1fr));
+    gap: 20px;
+    background-color: #000000;
+    justify-content:flex-start;
+    padding: 30px; /* Add padding to create space above and below */
+    border-radius: 20px; /* Add border-radius for rounded corners */
+    
+
+}
+
+.stat-box {
+    width:80%;
+    height: 100px;
+    padding: 10px;
+    background-color: #42424256;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(243, 239, 239, 0.1);
+}
+
+.stat-box h3 {
+    margin-top: 0;
+    font-size:small;
+    color: #cccccc;
+    text-align: center;
+}
+
+#spartanRankValue{
+    font-size:large;
+}
+
+
+.stat-box p {
+    font-size: large;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+}
