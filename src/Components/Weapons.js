@@ -10,13 +10,13 @@ function Weapons() {
         <h3 className="weapon-types">Human:</h3>
         <ul>
           <li>Assault Rifle<br /><img src={'/assets/images/assault-rifle.webp'} alt="Assault Rifle" width="200" height="100" /></li>
-          <li>Battle Rifle<br /><img src={'/assets/images/br.webp'} width="200" height="100" /></li>
+          <li>Battle Rifle<br /><img src={'/assets/images/br.webp'} alt="Battle Rifle" width="200" height="100" /></li>
           <li>DMR<br /><img src={'/assets/images/DMR.webp'} alt="DMR" width="200" height="100" /></li>
           <li>Sidekick<br /><img src={'/assets/images/sidekick.webp'} alt="Sidekick" width="200" height="100" /></li>
           <li>SAW<br /><img src={'/assets/images/SAW.webp'} alt="SAW" width="200" height="100" /></li>
           <li>SMG<br /><img src={'/assets/images/SMG.webp'} alt="SMG" width="200" height="100" /></li>
           <li>Sniper Rifle<br /><img src={'/assets/images/sniper-rifle.webp'} alt="Sniper Rifle" width="250" height="100" /></li>
-          <li>Shotgun<br /><img src={'/assets/images/bulldog.webp'}alt="Bulldog Shotgun" width="200" height="100" /></li>
+          <li>Shotgun<br /><img src={'/assets/images/bulldog.webp'}alt="Shotgun" width="200" height="100" /></li>
           <li>Rocket Launcher<br /><img src={'/assets/images/rockets.webp'} alt="Rocket Launcher" width="200" height="100" /></li>
           <li>Hydra Launcher<br /><img src={'/assets/images/hydra.webp'} alt="Hydra Launcher" width="200" height="100" /></li>
           <li>Frag Grenade<br /><img src={'/assets/images/frag-grenade.png'}alt="Fragmentation Grenade" width="100" height="100" /></li>

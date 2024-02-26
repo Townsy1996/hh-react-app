@@ -15,7 +15,7 @@ function News() {
         <p>
           The Firefight: King of the Hill gamemode has been expanded today. 343 has added five new maps into the rotation.
           It has been a few months since Firefight was released for Halo Infinite so this refresh comes at a great time.
-          To read the full article {' '}<a href="https://www.halowaypoint.com/news/firefight-king-of-the-hill-refresh-halo-infinte"
+          To read the full article {' '}<a href="https://www.halowaypoint.com/news/firefight-king-of-the-hill-refresh-halo-infinte" id="firefight-link"
             target="_blank" rel="noopener noreferrer">Click here.</a>
           <br /><br /><br /><br />
           <i>Posted 20th Febuary 2024</i>
@@ -31,7 +31,7 @@ function News() {
           The long awaited BTB refresh for Halo Infinite is now live! This update features FIVE new community made maps.
           This addition doubles, yes doubles, the map-pool for one of the most popular game modes in Halo. Big team battle
           players have been calling out for new maps for months, and 343 has finally delivered.{' '}
-          <a href="https://www.halowaypoint.com/news/btb-refresh" target="_blank" rel="noopener noreferrer">Click here</a> to read the full article.
+          <a href="https://www.halowaypoint.com/news/btb-refresh" target="_blank" rel="noopener noreferrer" id="btb-refresh-link">Click here</a> to read the full article.
           <br /><br /><br /><br />
           <i>Posted: 13th February 2024</i>
         </p>

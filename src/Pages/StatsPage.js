@@ -25,6 +25,8 @@ function StatsPage() {
     } catch (error) {
       console.error('Error fetching player stats:', error);
     }
+
+    <h2 data-testid="stat-subtitle">Main Player Stats: </h2>
   };
 
   return (

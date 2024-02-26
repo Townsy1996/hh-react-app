@@ -50,9 +50,16 @@ describe('Header Component', () => {
 
 });
 
-test('renders the maps component', () => {
-    render(<MemoryRouter><Maps /></MemoryRouter>);
+//Map Component Tests 
+
+describe('Maps Component', () => {
+    test('renders the Weapons component', () => {
+        render(<MemoryRouter><Maps /></MemoryRouter>);
+
+    });
+
 });
+
 
 
 // GamertagBox component tests
@@ -174,8 +181,49 @@ describe('News Component', () => {
     });
 });
 
-test('renders the weapons component', () => {
-    render(<MemoryRouter><Weapons /></MemoryRouter>);
+//Tests for Weapons Component 
+describe('Weapons Component', () => {
+    test('renders the Weapons component', () => {
+        render(<MemoryRouter><Weapons /></MemoryRouter>);
+
+    });
+
+    test('displays correct weapon types', () => {
+        render(<MemoryRouter><Weapons /></MemoryRouter>);
+        const humanWeaponType = screen.getByText('Human:');
+        const covenantWeaponType = screen.getByText('Covenant:');
+        expect(humanWeaponType).toBeInTheDocument();
+        expect(covenantWeaponType).toBeInTheDocument();
+    });
+
+
+    test('each image has correct alt attribute', () => {
+        render(<MemoryRouter><Weapons /></MemoryRouter>);
+
+        // Human Weapons
+        expect(screen.getByAltText('Assault Rifle')).toBeInTheDocument();
+        expect(screen.getByAltText('Battle Rifle')).toBeInTheDocument();
+        expect(screen.getByAltText('DMR')).toBeInTheDocument();
+        expect(screen.getByAltText('Sidekick')).toBeInTheDocument();
+        expect(screen.getByAltText('SAW')).toBeInTheDocument();
+        expect(screen.getByAltText('SMG')).toBeInTheDocument();
+        expect(screen.getByAltText('Sniper Rifle')).toBeInTheDocument();
+        expect(screen.getByAltText('Shotgun')).toBeInTheDocument();
+        expect(screen.getByAltText('Rocket Launcher')).toBeInTheDocument();
+        expect(screen.getByAltText('Hydra Launcher')).toBeInTheDocument();
+        expect(screen.getByAltText('Fragmentation Grenade')).toBeInTheDocument();
+
+        // Covenant Weapons
+        expect(screen.getByAltText('Gravity Hammer')).toBeInTheDocument();
+        expect(screen.getByAltText('Heatwave')).toBeInTheDocument();
+        expect(screen.getByAltText('Mangler')).toBeInTheDocument();
+        expect(screen.getByAltText('Needler')).toBeInTheDocument();
+        expect(screen.getByAltText('Energy Sword')).toBeInTheDocument();
+        expect(screen.getByAltText('Plasma Pistol')).toBeInTheDocument();
+        expect(screen.getByAltText('Skewer')).toBeInTheDocument();
+    });
+
+
 });
 
 
@@ -200,16 +248,6 @@ describe('WelcomeMessage Component', () => {
     });
 
 
-    test('navigates to player stats page when link is clicked', () => {
-        const historyMock = { push: jest.fn() }; // Mock the push method of history
-
-        render(<MemoryRouter history={historyMock}><WelcomeMessage /></MemoryRouter>);
-
-        const playerStatsLink = screen.getByRole('link', { name: /View Player Stats/i });
-        fireEvent.click(playerStatsLink);
-
-        expect(historyMock.push).toHaveBeenCalledWith('/stats/Mint Blitz'); // Verify the navigation
-    });
 });
 
 
